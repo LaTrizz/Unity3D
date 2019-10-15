@@ -22,7 +22,7 @@ public class Graph : MonoBehaviour
             position.y = position.x;
             point.localPosition = position;
             point.localScale = scale;
-            point.SetParent(transform);     // transform est 
+            point.SetParent(transform, false);     // transform faire référence au component "Transform" de l'objet qui tient le script, en l'occurrence "Graph" 
         }
     }
 }
